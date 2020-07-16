@@ -67,14 +67,27 @@ var flor=brickCalculator(5);
     // var min = Math.min.apply(Math, arr)
     // console.log(min)
 
-    var marks= [1, 2, 3, 4, 55, 65, 75, 74, 96,-200, -500];
-var  min =[0];
+//     var marks= [1, 2, 3, 4, 55, 65, 75, 74, 96,-200, -500];
+// var  min =[0];
 
-for(var i =0; i<marks.length; i++){
-    var element = marks[i];
-    if(element<min){
-        min =element;
-    }
-}
-console.log("Low valu is: ", min);
-
+// for(var i =0; i<marks.length; i++){
+//     var element = marks[i];
+//     if(element<min){
+//         min =element;
+//     }
+// }
+// console.log("Low valu is: ", min);
+function tinyFriend(name){
+    var min=name[0];
+  for(var i =0; i<name.length; i++){
+      var quntingName = name[i];
+      if(quntingName<min){
+          min =quntingName;
+      }
+  }
+  return min;
+  }
+  var name= ['karim', 'salin', 'kil', 'ki', 'k', 'kulsum',];
+  
+  var result=tinyFriend(name);
+  console.log(result);
