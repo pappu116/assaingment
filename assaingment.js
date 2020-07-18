@@ -81,13 +81,13 @@ function tinyFriend(name){
     var min=name[0];
   for(var i =0; i<name.length; i++){
       var quntingName = name[i];
-      if(quntingName<min){
+      if(quntingName.length<min.length){
           min =quntingName;
       }
   }
   return min;
   }
-  var name= ['karim', 'salin', 'kil', 'ki', 'k', 'kulsum',];
+  var name= ['karim', 'salin', 'kil', 'kili', 'kus', 'kulsum',];
   
   var result=tinyFriend(name);
   console.log(result);
